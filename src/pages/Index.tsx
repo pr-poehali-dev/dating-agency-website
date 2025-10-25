@@ -88,8 +88,7 @@ const Index = () => {
         <div className="container max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in bg-[#ffffff]">
             <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight tracking-tight">Find Your Perfect Match
-From Russia
-Premium matchmaking service connecting distinguished Asian gentlemen with beautiful, verified Russian women for serious relationships</h1>
+From Russia</h1>
             <Button 
               size="lg" 
               className="bg-foreground hover:bg-foreground/90 text-background font-light text-sm tracking-wider px-12 py-6 mt-4"

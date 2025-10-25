@@ -84,9 +84,9 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="relative min-h-screen flex items-center pt-20">
+      <section className="relative min-h-screen flex items-center pt-20 bg-[#ffffff]">
         <div className="container max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
+          <div className="animate-fade-in bg-[#ffffff]">
             <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight tracking-tight">
               CAPTURING the<br/>
               <span className="italic font-serif">ESSENCE</span> of<br/>

@@ -112,7 +112,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-32 px-6 bg-primary text-primary-foreground">
+      <section className="py-32 px-6 bg-background">
         <div className="container max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-[3/4] overflow-hidden">
@@ -179,7 +179,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="process" className="py-32 px-6 bg-primary text-primary-foreground">
+      <section id="process" className="py-32 px-6 bg-background">
         <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
           <div className="aspect-square overflow-hidden">
             <img 
@@ -195,7 +195,7 @@ const Index = () => {
             </h2>
             <div className="space-y-8 mt-12">
               {steps.map((step, index) => (
-                <div key={index} className="border-b border-primary-foreground/20 pb-6">
+                <div key={index} className="border-b border-border pb-6">
                   <div className="text-xs tracking-widest mb-2">Step {step.number}</div>
                   <h3 className="text-xl font-light mb-2">{step.title}</h3>
                   <p className="text-sm opacity-80 leading-relaxed">{step.description}</p>
@@ -204,7 +204,7 @@ const Index = () => {
             </div>
             <Button 
               variant="outline"
-              className="mt-12 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-light text-xs tracking-widest px-8"
+              className="mt-12 border-foreground text-foreground hover:bg-foreground hover:text-background font-light text-xs tracking-widest px-8"
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               START YOUR JOURNEY

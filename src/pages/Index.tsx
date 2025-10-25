@@ -72,128 +72,159 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
-        <div className="absolute inset-0 overflow-hidden">
-          <img 
-            src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/61829802-3e62-4421-85cf-27c1b287d971.jpg"
-            alt="Happy couple"
-            className="w-full h-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/65 to-background" />
+      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b border-border">
+        <div className="container max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="text-sm font-medium tracking-wider">MATCHMAKING</div>
+          <div className="hidden md:flex gap-8 text-sm">
+            <a href="#about" className="hover:opacity-60 transition-opacity">About</a>
+            <a href="#services" className="hover:opacity-60 transition-opacity">Services</a>
+            <a href="#process" className="hover:opacity-60 transition-opacity">Process</a>
+            <a href="#contact-form" className="hover:opacity-60 transition-opacity">Contact</a>
+          </div>
         </div>
-        <div className="container max-w-5xl mx-auto text-center relative z-10 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight">
-            Find Your Perfect Match
-            <span className="block text-primary mt-2">From Russia</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-light">
-            Premium matchmaking service connecting distinguished Asian gentlemen with beautiful, verified Russian women for serious relationships
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-6"
-            onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Start Your Journey
-            <Icon name="ArrowRight" className="ml-2" size={20} />
-          </Button>
+      </nav>
+
+      <section className="relative min-h-screen flex items-center pt-20">
+        <div className="container max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div className="animate-fade-in">
+            <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight tracking-tight">
+              CAPTURING the<br/>
+              <span className="italic font-serif">ESSENCE</span> of<br/>
+              YOUR<br/>
+              TREASURED<br/>
+              <span className="italic font-serif">MOMENTS</span>
+            </h1>
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-light text-sm tracking-wider px-12 py-6 mt-4"
+              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              DISCOVER MORE
+            </Button>
+          </div>
+          <div className="relative h-[600px]">
+            <img 
+              src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/61829802-3e62-4421-85cf-27c1b287d971.jpg"
+              alt="Happy couple"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-card/30">
+      <section className="py-32 px-6 bg-primary text-primary-foreground">
+        <div className="container max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="aspect-[3/4] overflow-hidden">
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/3e680f98-89aa-489f-8d0a-8167a4bba43b.jpg" alt="Couple" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="aspect-[3/4] overflow-hidden md:mt-12">
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/ce9724f8-ad36-4d56-9a58-cabf32093ce3.jpg" alt="Hands" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div className="aspect-[3/4] overflow-hidden col-span-2 md:col-span-1">
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/b81e46f9-2128-4625-9ee8-cf85810f023e.jpg" alt="Happy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-32 px-6 bg-background">
         <div className="container max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Why Choose Us</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Premium service built on trust and excellence</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-5xl md:text-6xl font-light text-center mb-4 tracking-tight">
+            WHY CHOOSE <span className="italic font-serif">US</span>
+          </h2>
+          <p className="text-center text-muted-foreground mb-20 text-sm tracking-wider">Premium service built on trust and excellence</p>
+          <div className="grid md:grid-cols-3 gap-16">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="border-border bg-card hover:border-primary/50 transition-all duration-300">
-                <CardHeader>
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <Icon name={benefit.icon} className="text-primary" size={28} />
-                  </div>
-                  <CardTitle className="text-2xl">{benefit.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{benefit.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4">
-        <div className="container max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Membership Plans</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Choose the service level that suits you best</p>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {plans.map((plan, index) => (
-              <Card 
-                key={index} 
-                className={`border-2 ${plan.featured ? 'border-primary bg-card/50' : 'border-border bg-card'} relative`}
-              >
-                {plan.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular
-                  </div>
-                )}
-                <CardHeader className="text-center pb-8">
-                  <CardTitle className="text-3xl mb-2">{plan.name}</CardTitle>
-                  <CardDescription className="text-2xl font-semibold text-foreground">{plan.price}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-4 mb-8">
-                    {plan.features.map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-start">
-                        <Icon name="Check" className="text-primary mr-3 flex-shrink-0 mt-0.5" size={20} />
-                        <span className="text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button 
-                    className={`w-full ${plan.featured ? 'bg-primary hover:bg-primary/90' : 'bg-secondary hover:bg-secondary/90'}`}
-                    onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    Get Started
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 bg-card/30">
-        <div className="container max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">How We Work</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Simple and transparent process</p>
-          <div className="space-y-8">
-            {steps.map((step, index) => (
-              <div key={index} className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">{step.number}</span>
+              <div key={index} className="text-center">
+                <div className="mb-6">
+                  <Icon name={benefit.icon} className="mx-auto" size={32} />
                 </div>
-                <div className="flex-1 pt-2">
-                  <h3 className="text-2xl font-semibold mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground text-lg">{step.description}</p>
-                </div>
+                <h3 className="text-xl font-light mb-3 tracking-wide">{benefit.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="container max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Frequently Asked Questions</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Everything you need to know</p>
-          <Accordion type="single" collapsible className="space-y-4">
+      <section id="services" className="py-32 px-6 bg-background">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-light text-center mb-4 tracking-tight">
+            S<span className="italic font-serif">E</span>RVICES
+          </h2>
+          <p className="text-center text-muted-foreground mb-20 text-sm tracking-wider">Choose the service level that suits you best</p>
+          <div className="grid md:grid-cols-2 gap-16">
+            {plans.map((plan, index) => (
+              <div key={index} className="text-center border border-border p-12 hover:border-primary transition-colors">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-light mb-2 tracking-wider italic font-serif">{plan.name}</h3>
+                  <p className="text-muted-foreground text-sm">{plan.price}</p>
+                </div>
+                <ul className="space-y-4 mb-10 text-sm text-muted-foreground">
+                  {plan.features.map((feature, fIndex) => (
+                    <li key={fIndex}>{feature}</li>
+                  ))}
+                </ul>
+                <Button 
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-light text-xs tracking-widest px-8"
+                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  LEARN MORE
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="py-32 px-6 bg-primary text-primary-foreground">
+        <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+          <div className="aspect-square overflow-hidden">
+            <img 
+              src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/3e680f98-89aa-489f-8d0a-8167a4bba43b.jpg"
+              alt="Process"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-4xl md:text-5xl font-light mb-4 tracking-tight">
+              OUR SIGNATURE<br/>
+              <span className="italic font-serif">PROCESS</span>
+            </h2>
+            <div className="space-y-8 mt-12">
+              {steps.map((step, index) => (
+                <div key={index} className="border-b border-primary-foreground/20 pb-6">
+                  <div className="text-xs tracking-widest mb-2">Step {step.number}</div>
+                  <h3 className="text-xl font-light mb-2">{step.title}</h3>
+                  <p className="text-sm opacity-80 leading-relaxed">{step.description}</p>
+                </div>
+              ))}
+            </div>
+            <Button 
+              variant="outline"
+              className="mt-12 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-light text-xs tracking-widest px-8"
+              onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              START YOUR JOURNEY
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 px-6 bg-background">
+        <div className="container max-w-4xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-light text-center mb-20 tracking-tight">
+            FREQUENTLY ASKED <span className="italic font-serif">QUESTIONS</span>
+          </h2>
+          <Accordion type="single" collapsible className="space-y-1">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-border rounded-lg px-6 bg-card">
-                <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-border">
+                <AccordionTrigger className="text-base font-light hover:opacity-60 py-6">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-6">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
@@ -202,51 +233,40 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact-form" className="py-20 px-4 bg-gradient-to-b from-background to-card/30">
-        <div className="container max-w-xl mx-auto">
-          <Card className="border-2 border-primary/20">
-            <CardHeader className="text-center">
-              <CardTitle className="text-3xl md:text-4xl mb-2">Ready to Begin?</CardTitle>
-              <CardDescription className="text-lg">Submit your application and our manager will contact you shortly</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-base">Your Name</Label>
-                  <Input
-                    id="name"
-                    placeholder="John Smith"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="h-12 text-base"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-base">Email Address</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="john@example.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="h-12 text-base"
-                  />
-                </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12 text-lg font-semibold">
-                  Submit Application
-                  <Icon name="Send" className="ml-2" size={20} />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+      <section id="contact-form" className="py-32 px-6 bg-background border-t border-border">
+        <div className="container max-w-2xl mx-auto text-center">
+          <h2 className="text-5xl md:text-6xl font-light mb-6 tracking-tight">
+            READY TO <span className="italic font-serif">BEGIN?</span>
+          </h2>
+          <p className="text-muted-foreground mb-12 text-sm">Submit your application and our manager will contact you shortly</p>
+          <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto">
+            <Input
+              id="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              required
+              className="h-14 text-sm border-primary/20 focus:border-primary"
+            />
+            <Input
+              id="email"
+              type="email"
+              placeholder="Email Address"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              required
+              className="h-14 text-sm border-primary/20 focus:border-primary"
+            />
+            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-14 text-xs tracking-widest font-light">
+              SUBMIT APPLICATION
+            </Button>
+          </form>
         </div>
       </section>
 
-      <footer className="py-12 px-4 border-t border-border">
+      <footer className="py-12 px-6 border-t border-border">
         <div className="container max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground">© 2025 Premium Matchmaking Agency. All rights reserved.</p>
+          <p className="text-muted-foreground text-xs tracking-wider">© 2025 PREMIUM MATCHMAKING AGENCY. ALL RIGHTS RESERVED.</p>
         </div>
       </footer>
     </div>

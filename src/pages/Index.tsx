@@ -168,7 +168,7 @@ const Index = () => {
                 </ul>
                 <Button 
                   variant="outline"
-                  className="border-foreground text-foreground hover:bg-foreground hover:text-background font-light text-xs tracking-widest px-8"
+                  className="border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-background font-light text-xs tracking-widest px-8"
                   onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   LEARN MORE

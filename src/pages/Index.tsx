@@ -233,7 +233,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact-form" className="py-32 px-6 bg-background border-t border-border">
+      <section id="contact-form" className="py-32 px-6 border-t border-border bg-[#ffffff]">
         <div className="container max-w-2xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-light mb-6 tracking-tight">
             READY TO <span className="italic font-serif">BEGIN?</span>

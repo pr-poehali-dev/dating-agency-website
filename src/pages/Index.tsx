@@ -264,9 +264,9 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-12 px-6 border-t border-border">
+      <footer className="py-12 px-6 border-t border-border bg-[#ffffff]">
         <div className="container max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground text-xs tracking-wider">© 2025 PREMIUM MATCHMAKING AGENCY. ALL RIGHTS RESERVED.</p>
+          <p className="text-xs tracking-wider text-slate-600">© 2025 PREMIUM MATCHMAKING AGENCY. ALL RIGHTS RESERVED.</p>
         </div>
       </footer>
     </div>

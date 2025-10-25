@@ -74,7 +74,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-sm z-50 border-b border-border">
         <div className="container max-w-6xl mx-auto px-6 py-4 flex justify-between items-center bg-[#ffffff]">
-          <div className="text-sm font-medium tracking-wider">MATCHMAKING</div>
+          <div className="text-sm font-medium tracking-wider">Asia heart</div>
           <div className="hidden md:flex gap-8 text-sm">
             <a href="#about" className="hover:opacity-60 transition-opacity">About</a>
             <a href="#services" className="hover:opacity-60 transition-opacity">Services</a>

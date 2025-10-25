@@ -116,7 +116,7 @@ const Index = () => {
         <div className="container max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-[3/4] overflow-hidden">
-              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/3e680f98-89aa-489f-8d0a-8167a4bba43b.jpg" alt="Couple" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 opacity-60" />
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/81c59e61-6a84-4afb-8efa-5d00c7b7b377.jpg" alt="Couple" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 opacity-60" />
             </div>
             <div className="aspect-[3/4] overflow-hidden md:mt-12">
               <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/ce9724f8-ad36-4d56-9a58-cabf32093ce3.jpg" alt="Hands" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 opacity-60" />

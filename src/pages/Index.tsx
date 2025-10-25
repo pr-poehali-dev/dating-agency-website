@@ -128,7 +128,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-32 px-6 bg-background">
+      <section id="about" className="py-32 px-6 bg-[#ffffff]">
         <div className="container max-w-6xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-light text-center mb-4 tracking-tight">
             WHY CHOOSE <span className="italic font-serif">US</span>
@@ -141,14 +141,14 @@ const Index = () => {
                   <Icon name={benefit.icon} className="mx-auto" size={32} />
                 </div>
                 <h3 className="text-xl font-light mb-3 tracking-wide">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+                <p className="text-sm leading-relaxed text-slate-600">{benefit.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="services" className="py-32 px-6 bg-background">
+      <section id="services" className="py-32 px-6 bg-[#ffffff]">
         <div className="container max-w-6xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-light text-center mb-4 tracking-tight">
             S<span className="italic font-serif">E</span>RVICES

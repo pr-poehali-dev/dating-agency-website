@@ -179,7 +179,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="process" className="py-32 px-6 bg-background">
+      <section id="process" className="py-32 px-6 bg-[#ffffff]">
         <div className="container max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
           <div className="aspect-square overflow-hidden">
             <img 

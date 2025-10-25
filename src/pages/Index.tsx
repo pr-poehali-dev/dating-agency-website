@@ -112,7 +112,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-32 px-6 bg-background">
+      <section className="py-32 px-6 bg-[#ffffff]">
         <div className="container max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-[3/4] overflow-hidden">

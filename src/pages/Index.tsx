@@ -161,7 +161,7 @@ const Index = () => {
                   <h3 className="text-2xl font-light mb-2 tracking-wider italic font-serif">{plan.name}</h3>
                   <p className="text-muted-foreground text-sm">{plan.price}</p>
                 </div>
-                <ul className="space-y-4 mb-10 text-sm text-muted-foreground">
+                <ul className="space-y-4 mb-10 text-sm text-foreground">
                   {plan.features.map((feature, fIndex) => (
                     <li key={fIndex}>{feature}</li>
                   ))}

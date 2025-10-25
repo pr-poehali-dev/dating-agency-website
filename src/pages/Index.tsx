@@ -106,7 +106,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/61829802-3e62-4421-85cf-27c1b287d971.jpg"
               alt="Happy couple"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-60"
             />
           </div>
         </div>
@@ -116,13 +116,13 @@ const Index = () => {
         <div className="container max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="aspect-[3/4] overflow-hidden">
-              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/3e680f98-89aa-489f-8d0a-8167a4bba43b.jpg" alt="Couple" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/3e680f98-89aa-489f-8d0a-8167a4bba43b.jpg" alt="Couple" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 opacity-60" />
             </div>
             <div className="aspect-[3/4] overflow-hidden md:mt-12">
-              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/ce9724f8-ad36-4d56-9a58-cabf32093ce3.jpg" alt="Hands" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/ce9724f8-ad36-4d56-9a58-cabf32093ce3.jpg" alt="Hands" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 opacity-60" />
             </div>
             <div className="aspect-[3/4] overflow-hidden col-span-2 md:col-span-1">
-              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/b81e46f9-2128-4625-9ee8-cf85810f023e.jpg" alt="Happy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/b81e46f9-2128-4625-9ee8-cf85810f023e.jpg" alt="Happy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 opacity-60" />
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/3e680f98-89aa-489f-8d0a-8167a4bba43b.jpg"
               alt="Process"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-60"
             />
           </div>
           <div>

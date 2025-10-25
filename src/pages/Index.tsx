@@ -77,9 +77,9 @@ const Index = () => {
           <img 
             src="https://cdn.poehali.dev/projects/5901d96a-c1fa-4d0e-bc99-6a01ae4385db/files/61829802-3e62-4421-85cf-27c1b287d971.jpg"
             alt="Happy couple"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/85 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/65 to-background" />
         </div>
         <div className="container max-w-5xl mx-auto text-center relative z-10 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight">

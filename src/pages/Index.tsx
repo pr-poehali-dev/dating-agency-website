@@ -96,7 +96,7 @@ const Index = () => {
             </h1>
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-light text-sm tracking-wider px-12 py-6 mt-4"
+              className="bg-foreground hover:bg-foreground/90 text-background font-light text-sm tracking-wider px-12 py-6 mt-4"
               onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               DISCOVER MORE
@@ -168,7 +168,7 @@ const Index = () => {
                 </ul>
                 <Button 
                   variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-light text-xs tracking-widest px-8"
+                  className="border-foreground text-foreground hover:bg-foreground hover:text-background font-light text-xs tracking-widest px-8"
                   onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   LEARN MORE
@@ -257,7 +257,7 @@ const Index = () => {
               required
               className="h-14 text-sm border-primary/20 focus:border-primary"
             />
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-14 text-xs tracking-widest font-light">
+            <Button type="submit" className="w-full bg-foreground hover:bg-foreground/90 text-background h-14 text-xs tracking-widest font-light">
               SUBMIT APPLICATION
             </Button>
           </form>
